@@ -30,8 +30,8 @@
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.profiles.windows": {
         "Ubuntu (WSL)": {
-            "source": "Ubuntu (WSL)"
+            "source": "PowerShell"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)"
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
 }
