@@ -4,10 +4,12 @@
 }
 
 :root {
+    --gray-200: hsla(220, 17%, 93%, 1);
     --gray-500: hsla(220, 13%, 46%, 1);
+    --gray-900: hsla(221, 43%, 11%, 1);
+
     --base-white: hsla(0, 0%, 100%, 1);
     --red-default: hsla(0, 59%, 35%, 1);
-    --grey-900: hsla(221, 43%, 11%, 1);
 
     font-family: Inter, "Arial";
 }
@@ -71,7 +73,7 @@ header {
 .white-button:hover {
     cursor: pointer;
 
-    border: 1px solid black;
+    outline: 1px solid black;
 }
 
 .red-button {
@@ -108,7 +110,7 @@ header {
 }
 
 #about-us h3 {
-    color: var(--grey-900);
+    color: var(--gray-900);
     font-size: 48px;
     font-weight: 600;
     letter-spacing: -0.96px;
@@ -152,7 +154,7 @@ header {
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-    color: var(--grey-900);
+    color: var(--gray-900);
 }
 
 #container p {
@@ -164,7 +166,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 64px;
 }
 
 #jobs-container {
@@ -183,7 +184,7 @@ header {
 }
 
 #jobs-container h3 {
-    color: var(--grey-900);
+    color: var(--gray-900);
 
     font-size: 36px;
     line-height: 44px;
@@ -195,4 +196,49 @@ header {
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+}
+
+#jobs img {
+    margin-top: 64px;
+}
+
+.jobs-container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.jobs-container-2 h3 {
+    margin-top: 64px;
+    margin-bottom: 32px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 24px 28px;
+    margin-bottom: 24px;
+
+    width: 720px;
+    border: 1px solid var(--gray-200);
+    border-radius: 16px;
+}
+
+.job .title-job {
+    color: var(--gray-900);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+
+.job .info {
+    color: var(--gray-500);
+}
+
+.job .info span + span {
+    margin-left: 24px;
 }
